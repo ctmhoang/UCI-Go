@@ -78,3 +78,29 @@ sli2 := make([]int , 1, 3)
 ```
 * append() like append in python
 
+# Map
+* Declare and assign `var mymap map[keyType]valueType = make(map[keyType]valueType)`
+* map literal `mymap := map[keyType]valueType {key : value,...}`
+* access value using brackets notation
+* delete key-value pair by using `delete(nameMap, keyName)`
+* Two values asssign from accessing a pair
+```
+val , p := arrayName[keyName]
+val - value associated
+p - boolean present or not ?
+```
+* `len()` can be use with map
+* interate with for range loop
+
+# Struct
+* Like C
+```
+type struct NameStruct{
+	varName type
+	...
+}
+var n NameStruct //declare => have access to all field
+```
+* Access using dot notation
+* can use `new()` to init struct to all fields
+* init by Struct literal `blah = StructName(var : val, ...)`

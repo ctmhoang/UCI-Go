@@ -104,3 +104,21 @@ var n NameStruct //declare => have access to all field
 * Access using dot notation
 * can use `new()` to init struct to all fields
 * init by Struct literal `blah = StructName(var : val, ...)`
+# JSON
+* `json.Marshal(objName)` and `json.Unmarshal(barray, &objAddr)` using byte array
+# File
+* ioutil pkg
+```
+// do not use read big file
+data,err = ioutil.ReadFile("fileName") //do not need to close it read all content and close itself
+ioutil.WriteFile("nameFile",string, unix permission)
+```
+* os pkg
+```
+os.Open("fileName") // return File Struct
+os.Close()
+os.Read() // read to fill the byte array
+os.Write() // like read
+os.Create("FileName")
+os.WriteString()
+```

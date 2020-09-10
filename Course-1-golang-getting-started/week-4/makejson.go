@@ -17,7 +17,7 @@ func main() {
 	scanner.Scan()
 	addr := scanner.Text()
 
-	var infos  = map[string]string {"Name" : name, "Address" : addr}
+	var infos  = map[string]string {"name" : name, "address" : addr}
 	barray, _ :=json.Marshal(infos)
 	fmt.Printf("%s",barray)
 }

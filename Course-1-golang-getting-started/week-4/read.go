@@ -18,6 +18,7 @@ func main() {
 	file, err := os.Open(scanner.Text())
 	if err != nil{
 		fmt.Fprintf(os.Stderr,"There are no such file like the name you provide")
+		os.Exit(1)
 	}
 	defer file.Close()
 
